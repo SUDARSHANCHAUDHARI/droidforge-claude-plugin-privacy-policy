@@ -44,7 +44,7 @@ This repository hosts the official privacy policy for the **DroidForge** Claude 
 ## Install
 
 ```bash
-/plugin install https://github.com/SUDARSHANCHAUDHARI/DroidForge
+/plugin install droidforge
 ```
 
 Run `/droidforge:setup` once per project to save your conventions. All other commands use your saved config automatically — no repeated questions, no hardcoded values.
