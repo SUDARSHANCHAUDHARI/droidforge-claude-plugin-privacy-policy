@@ -1,77 +1,208 @@
-# DroidForge — Privacy Policy
+# DroidForge Privacy Policy
 
-This repository hosts the official privacy policy for the **DroidForge** Claude Code plugin.
+**Effective Date:** May 17, 2026
+_Last updated: May 17, 2026_
+**Version:** 1.0.0
 
-**Live privacy policy:** https://sudarshanchaudhari.github.io/droidforge-claude-plugin-privacy-policy/
+DroidForge ("we," "our," or "us") is a Claude Code plugin for solo Android developers that helps scaffold Android apps, manage Gradle/version-catalog updates, generate keystore commands, prepare signing configuration, bump app versions, and run Play Store release checklists. This Privacy Policy explains what information the plugin can access locally, how it is used, and the choices you have. By installing or using DroidForge, you agree to the practices described below.
 
----
+## Information We Collect
+
+### Location Data
+- **Not collected**: DroidForge is a Claude Code plugin, not an Android app or mobile service. It does not request, collect, infer, store, or share device location data.
+- **No background location**: The plugin does not run a mobile background location service and does not use GPS, Wi-Fi, Bluetooth, or cell-tower location signals.
+
+### Account Information
+- **No plugin account**: DroidForge does not require a separate account, login, or hosted user profile.
+- **Local developer settings**: The plugin may use developer details you enter in Claude Code settings or local project configuration, if relevant to the command you run.
+- **GitHub identity**: If a workflow references GitHub repositories, it uses the repository URLs or usernames you provide locally. DroidForge does not operate a separate identity service.
+
+### Device Information
+- **Local project files**: Developer conventions saved by `/droidforge:setup`, such as developer name, company name, package prefix, GitHub username, and optional keystore-related preferences.
+- Android project metadata needed for release automation, such as Gradle files, version catalog files, package names, and release checklist state.
+- **Environment information**: The plugin may inspect local tool availability, such as Git, Java, Gradle, shell commands, or Claude Code plugin settings, only to perform requested local workflows.
+- **No telemetry**: DroidForge does not collect analytics, device identifiers, advertising IDs, crash reports, or usage telemetry.
+
+## How We Use Your Information
+
+### Location Sharing
+- **Not applicable**: DroidForge does not provide location sharing and does not share your location with anyone.
+- Any location-related Android permissions in projects you inspect are treated only as local project text if they appear in files you ask Claude Code to analyze.
+
+### Account Management
+- There is no hosted DroidForge account to create, manage, or delete.
+- Local developer settings are used only to avoid repeated prompts and to generate project-specific output when you run commands.
+
+### Service Improvement
+- DroidForge does not send usage data, diagnostics, or generated output to a SudarshanTechLabs server.
+- Improvements happen through local plugin updates, source-code changes, documentation updates, and issue reports you choose to file manually.
+- We do not run ads and do not sell, rent, or monetize your data to third parties.
+
+## Storage and Retention
+
+### Data Storage
+- DroidForge may write local project files such as `.claude-plugin-config.json`, Android scaffold files, Gradle configuration, version catalog updates, changelog/release notes, and signing config snippets when you explicitly run the relevant commands.
+- All plugin-accessed content remains in your local Claude Code session, local filesystem, or the project repository you are working in.
+- No plugin data is stored on a SudarshanTechLabs backend server.
+
+### Data Retention
+- Local settings remain until you delete them, reset Claude Code plugin settings, remove the project config, or uninstall the plugin.
+- Generated files remain in your local project until you delete or commit them.
+- Claude Code itself may retain conversation or workspace context according to Anthropic/Claude Code settings and policies; DroidForge does not control that retention.
+
+### Data Security
+- DroidForge is designed for local-first use inside Claude Code.
+- Sensitive generated content, such as signing snippets, local config, or project metadata, should be reviewed before committing to git.
+- The plugin does not intentionally transmit plugin-accessed data to external servers.
+
+## Data Sharing
+
+### Family Groups
+- **Not applicable**: DroidForge does not include family groups, groups, teams, social sharing, or location-sharing communities.
+- Data is not shared with family members or other users by the plugin.
+
+### Third Parties
+- DroidForge does not send data to Firebase, Google Cloud, analytics services, advertising networks, or data brokers.
+- If you choose to run Android/Gradle/Play Store related tooling, those tools may have their own behavior outside DroidForge.
+- See [Anthropic's Privacy Policy](https://www.anthropic.com/privacy) for Claude/Claude Code data practices.
+- See [GitHub's Privacy Statement](https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement) for GitHub-hosted repositories or GitHub Pages that you choose to use.
+
+We do **not** share your data with:
+- Advertising networks
+- Data brokers
+- Analytics services operated by this plugin
+- A SudarshanTechLabs backend server
+
+## Permissions Used
+
+### Required Permissions
+
+* **Local workspace file access**: Required so Claude Code and DroidForge can read or update project files that you explicitly work on.
+* **Claude Code plugin configuration access**: Required to read plugin settings or command configuration when a command needs it.
+* **Command-specific local tool access**: Read and write access to files in the local project where Claude Code is running. Optional shell access for commands you explicitly approve, such as `keytool` for keystore generation or Gradle commands for release checks.
+
+### Optional Permissions
+
+* **Network access**: Not required for normal local policy behavior, except for command-specific tasks you explicitly request, such as downloading a local tool, viewing documentation, or publishing a GitHub Pages repository.
+* **Git/GitHub access**: Optional and used only when you explicitly ask for repository or publishing workflows.
+* **Shell command execution**: Optional and subject to Claude Code/macOS approval flows when commands need to run local tools.
+
+## Your Rights and Controls
+
+### Location Sharing Control
+- DroidForge does not collect or share location data.
+- If you inspect an Android project with location permissions, you control that project and its privacy disclosures separately.
+
+### Account Management
+- There is no DroidForge hosted account.
+- You can remove local plugin settings, project config, generated files, and the plugin itself at any time.
+
+### Data Access
+- You can inspect all files generated by DroidForge in your local project.
+- You can inspect plugin settings in Claude Code settings where applicable.
+- You can review source code and documentation in the plugin repository.
+
+### GDPR Rights (EU Users)
+If you are in the European Union, you may have additional rights regarding personal data:
+- **Right to Access**: Request a copy of personal data we may hold
+- **Right to Rectification**: Correct inaccurate data
+- **Right to Erasure**: Request deletion of data
+- **Right to Restrict Processing**: Limit how data is used
+- **Right to Data Portability**: Receive data in a portable format
+- **Right to Object**: Object to certain types of processing
+
+Because DroidForge does not operate a hosted backend or collect plugin telemetry, most plugin-related data is under your direct local control. For questions, contact us using the methods in the Contact Us section.
+
+### Permissions
+- You can disable or uninstall DroidForge in Claude Code.
+- You can delete generated files from your project.
+- You can deny local command execution when Claude Code asks for approval.
+- You can avoid GitHub publishing workflows unless you explicitly want to publish generated files.
+
+## Children's Privacy
+
+- DroidForge is a developer tool and is **not intended for children under 13**.
+- We do not knowingly collect data from children under 13 through this plugin.
+- If you believe a child has provided personal information through plugin-related communication, contact us to request deletion.
+
+## Security
+
+- DroidForge follows a local-first design and does not intentionally transmit plugin-accessed files to a SudarshanTechLabs server.
+- Review generated output before committing, publishing, or sharing it.
+- Do not commit secrets, private keys, keystores, tokens, local config, or signing material.
+- Keep Claude Code, Git, Java, Gradle, and other local tools updated.
+- Use git ignore rules for machine-specific and secret files.
+
+## Changes to This Policy
+
+We may update this Privacy Policy to reflect new plugin features, legal requirements, or changes in our practices. Significant changes will be:
+- Noted in plugin release notes or changelog when applicable
+- Updated in this repository
+- Published with a new "Last updated" date
+
+The "Last updated" date at the top of this policy indicates when revisions occurred. Continued use of the plugin after changes constitutes acceptance of the updated policy.
+
+## Contact Us
+
+If you have questions about this Privacy Policy, wish to request deletion of any information you sent us directly, or have privacy concerns:
+
+* **GitHub Repository:** https://github.com/SUDARSHANCHAUDHARI/droidforge-claude-plugin-privacy-policy
+* **Email:** sunny.sudarshan@gmail.com
+* **Plugin Repository:** https://github.com/SUDARSHANCHAUDHARI/DroidForge
+* **Live Privacy Policy:** https://sudarshanchaudhari.github.io/droidforge-claude-plugin-privacy-policy/
+
+We will respond as quickly as possible, typically within 48 hours.
+
+## Data Deletion
+
+### How to Delete Your Account:
+There is no hosted DroidForge account. You have multiple options to remove plugin-related local data:
+
+#### Option 1: In-App Deletion
+1. Open Claude Code
+2. Disable or uninstall the DroidForge plugin
+3. Remove any DroidForge plugin settings from Claude Code settings
+4. Delete any generated files or local configuration from the project where you used the plugin
+
+#### Option 2: Email Deletion Request
+Send an email to: **sunny.sudarshan@gmail.com**
+- Subject: "DroidForge Privacy/Data Deletion Request"
+- Include: What information you believe you sent to us directly
+- We'll review and respond within 48 hours
+
+#### Option 3: Web Deletion
+DroidForge does not provide a hosted web account deletion portal because it does not create hosted user accounts.
+
+### What Gets Deleted:
+- Local plugin settings you remove from Claude Code
+- Local generated files you delete from your project
+- Local project configuration files you delete
+- Any direct support-request information you ask us to delete, where legally and technically possible
+
+### Data Retention After Deletion:
+- **Immediate:** Local files/settings are removed when you delete them from your machine
+- **Support email:** Support messages may remain in email systems unless you request deletion and deletion is legally/technically possible
+- **No hosted plugin backend:** There is no DroidForge server database to delete from
+
+1. Delete `.claude-plugin-config.json` from the project where you ran setup.
+2. Delete generated scaffold or release files from your local repository if you no longer need them.
+3. Uninstall the plugin from Claude Code if you no longer want the commands available.
+
+## Firebase and Google Services
+
+- DroidForge does not use Firebase Authentication, Firebase Realtime Database, Firebase Analytics, Firebase Crashlytics, Google Maps, AdMob, or Google Location Services as part of the plugin privacy-policy workflow.
+- If DroidForge helps inspect or generate disclosures for an Android app that uses Firebase or Google services, that information is read from your local project files and belongs to that Android app's own privacy policy.
+- See [Google's Privacy Policy](https://policies.google.com/privacy) for Google's data practices when you independently use Google services.
 
 ## About DroidForge
 
-**DroidForge** is a Claude Code plugin for solo Android developers. It automates every repetitive task across your Play Store app portfolio — keystore creation, signing configuration, version bumping, Gradle version catalog management, new app scaffolding, and release checklists — all from commands inside Claude Code.
+DroidForge is a Claude Code plugin for solo Android developers that helps scaffold Android apps, manage Gradle/version-catalog updates, generate keystore commands, prepare signing configuration, bump app versions, and run Play Store release checklists.
 
-### What It Does
+Main commands include: `/droidforge:setup`, `/droidforge:new-app`, `/droidforge:keystore`, `/droidforge:signing-config`, `/droidforge:version-bump`, `/droidforge:gradle-update`, `/droidforge:release-checklist`.
 
-1. Run `/droidforge:setup` once per project — saves your developer conventions locally
-2. Scaffold a complete new Android app with correct package names, signing config, and version catalog
-3. Generate keystores with consistent conventions — shows the `keytool` command, asks before running
-4. Bump `versionCode` and `versionName` with semver (patch / minor / major)
-5. Update `libs.versions.toml` with compatibility checks (AGP ↔ Gradle ↔ Kotlin ↔ Compose)
-6. Run an interactive pre-submission checklist before every Play Store release
+The plugin is intended to run inside Claude Code and operate on local project files under your control.
 
-### Commands
+## Recent Updates (Version 1.0.0 - May 17, 2026)
 
-| Command | Description |
-|---|---|
-| `/droidforge:setup` | One-time setup — saves your Android developer conventions |
-| `/droidforge:new-app` | Scaffold a complete new Android app with all files |
-| `/droidforge:keystore` | Generate a keystore (shows keytool command, asks first) |
-| `/droidforge:signing-config` | Write signing config for build.gradle.kts |
-| `/droidforge:version-bump` | Bump versionCode and versionName |
-| `/droidforge:gradle-update` | Update version catalog dependencies with compatibility checks |
-| `/droidforge:release-checklist` | Interactive pre-submission checklist for Play Store |
-
-### Agents
-
-| Agent | Purpose |
-|---|---|
-| `setup-agent` | Scaffolds complete Android project files |
-| `gradle-agent` | Handles Gradle / version catalog issues and updates |
-| `release-agent` | Version bump, changelog generation, git tagging |
-
----
-
-## Install
-
-```bash
-/plugin install droidforge
-```
-
-Run `/droidforge:setup` once per project to save your conventions. All other commands use your saved config automatically — no repeated questions, no hardcoded values.
-
----
-
-## Plugin Repository
-
-Full source code, documentation, and issue tracker:
-**https://github.com/SUDARSHANCHAUDHARI/DroidForge**
-
----
-
-## Privacy Policy for This Plugin
-
-DroidForge does **not** collect, transmit, or store any user data. All file reading and generation happens locally on your machine. Your developer conventions (name, company, package prefix, keystore password) are stored only in `.claude-plugin-config.json` on your local machine — automatically excluded from git.
-
-The full privacy policy for this plugin is available at:
-**https://sudarshanchaudhari.github.io/droidforge-claude-plugin-privacy-policy/**
-
----
-
-## Author
-
-**SUDARSHANCHAUDHARI** — [github.com/SUDARSHANCHAUDHARI](https://github.com/SUDARSHANCHAUDHARI)
-SudarshanTechLabs | sudarshantechlabs@gmail.com
-
-## License
-
-MIT
+- Initial plugin privacy policy aligned with the shared SudarshanTechLabs privacy policy structure.
+- Clarifies local-only handling of developer conventions, Android project files, keystore commands, and release workflow data.
