@@ -14,7 +14,7 @@
 <h1>DroidForge Privacy Policy</h1>
 
 <p><strong>Effective Date:</strong> May 17, 2026</p>
-<p><em>Last updated: May 17, 2026</em></p>
+<p><em>Last updated: October 19, 2026</em></p>
 <p><strong>Version:</strong> 1.0.0</p>
 
 <p>DroidForge ("we," "our," or "us") is a Claude Code plugin for solo Android developers that helps scaffold Android apps, manage Gradle/version-catalog updates, generate keystore commands, prepare signing configuration, bump app versions, and run Play Store release checklists. This Privacy Policy explains what information the plugin can access locally, how it is used, and the choices you have. By installing or using DroidForge, you agree to the practices described below.</p>
@@ -31,7 +31,7 @@
 <p class="li">- <strong>GitHub identity</strong>: If a workflow references GitHub repositories, it uses the repository URLs or usernames you provide locally. DroidForge does not operate a separate identity service.</p>
 
 <h3>Device Information</h3>
-<p class="li">- <strong>Local project files</strong>: Developer conventions saved by <code>/droidforge:setup</code>, such as developer name, company name, package prefix, GitHub username, and optional keystore-related preferences.</p>
+<p class="li">- <strong>Local project files</strong>: Developer conventions saved by <code>/droidforge:setup</code> to <code>.claude-plugin-config.json</code>: developer name, company name, GitHub username, country, country code, city, package prefix, and privacy policy URL pattern. Company, city and country are used in keystore certificate details. The keystore password is never asked for or stored; it is read from the <code>DROIDFORGE_KEYSTORE_PASSWORD</code> environment variable you set yourself.</p>
 <p class="li">- Android project metadata needed for release automation, such as Gradle files, version catalog files, package names, and release checklist state.</p>
 <p class="li">- <strong>Environment information</strong>: The plugin may inspect local tool availability, such as Git, Java, Gradle, shell commands, or Claude Code plugin settings, only to perform requested local workflows.</p>
 <p class="li">- <strong>No telemetry</strong>: DroidForge does not collect analytics, device identifiers, advertising IDs, crash reports, or usage telemetry.</p>

@@ -1,7 +1,7 @@
 # DroidForge Privacy Policy
 
 **Effective Date:** May 17, 2026
-_Last updated: May 17, 2026_
+_Last updated: October 19, 2026_
 **Version:** 1.0.0
 
 DroidForge ("we," "our," or "us") is a Claude Code plugin for solo Android developers that helps scaffold Android apps, manage Gradle/version-catalog updates, generate keystore commands, prepare signing configuration, bump app versions, and run Play Store release checklists. This Privacy Policy explains what information the plugin can access locally, how it is used, and the choices you have. By installing or using DroidForge, you agree to the practices described below.
@@ -18,7 +18,7 @@ DroidForge ("we," "our," or "us") is a Claude Code plugin for solo Android devel
 - **GitHub identity**: If a workflow references GitHub repositories, it uses the repository URLs or usernames you provide locally. DroidForge does not operate a separate identity service.
 
 ### Device Information
-- **Local project files**: Developer conventions saved by `/droidforge:setup`, such as developer name, company name, package prefix, GitHub username, and optional keystore-related preferences.
+- **Local project files**: Developer conventions saved by `/droidforge:setup` to `.claude-plugin-config.json`: developer name, company name, GitHub username, country, country code, city, package prefix, and privacy policy URL pattern. Company, city and country are used in keystore certificate details. The keystore password is never asked for or stored; it is read from the `DROIDFORGE_KEYSTORE_PASSWORD` environment variable you set yourself.
 - Android project metadata needed for release automation, such as Gradle files, version catalog files, package names, and release checklist state.
 - **Environment information**: The plugin may inspect local tool availability, such as Git, Java, Gradle, shell commands, or Claude Code plugin settings, only to perform requested local workflows.
 - **No telemetry**: DroidForge does not collect analytics, device identifiers, advertising IDs, crash reports, or usage telemetry.
